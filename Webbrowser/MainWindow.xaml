@@ -1,0 +1,16 @@
+﻿<Window x:Class="Webbrowser.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Webbrowser"
+        mc:Ignorable="d"
+        Title="Webbrowser" Height="529" Width="731">
+    <Grid>
+        <Button Content="&lt;&lt;" Height="23" HorizontalAlignment="Left" Margin="10,5,0,0" Name="MyBack" VerticalAlignment="Top" Width="25" ToolTip="Backword" Click="MyBack_Click" />
+        <WebBrowser Height="445" HorizontalAlignment="Left" Margin="10,33,0,0" x:Name="MyWebBrowser" VerticalAlignment="Top" Width="687" LoadCompleted="MyWebBrowser_LoadCompleted" />
+        <TextBox Height="23" Margin="103,5,12,0" Name="MyTextBox" VerticalAlignment="Top" />
+        <Button Content="|&gt;" Height="23" HorizontalAlignment="Left" Margin="41,5,0,0" Name="MyGo" VerticalAlignment="Top" Width="25" ToolTip="Go" Click="MyGo_Click" />
+        <Button Content="&gt;&gt;" Height="23" HorizontalAlignment="Right" Margin="0,5,612,0" Name="MyForward" VerticalAlignment="Top" Width="25" ToolTip="Forward" Click="MyForward_Click" />
+    </Grid>
+</Window>
